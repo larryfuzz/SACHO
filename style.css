@@ -34,7 +34,8 @@ section {
 /////////////////////////////////////////// HEADER //////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header{
-    background-color: black;
+    background-image: url(sacho_bg.jpg);
+    background-size: cover;
     min-height: 100vh;
     margin: 0%;
     padding: 0%;
@@ -63,7 +64,8 @@ ul{
 /*//////////////////////////////////////////VIDEO/////////////////////////////////////////////////////////*/
 
 #section_video{
-    background-image: url(image_de_fond_1.png) ;
+    background-image: url(image_de_fond_1.jpg) ;
+    
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -77,6 +79,11 @@ ul{
     background-attachment: fixed;
   }
 
+  #video{
+  width: 720px;
+  height: 405px;
+  border: 0;
+}
 /*//////////////////////////////////////////AFFICHE/////////////////////////////////////////////////////////*/
 
 #section_affiche{
@@ -93,8 +100,9 @@ h2{
     display: block; 
 }
 #affiche{
+    padding-top: 10%;
     display: block;
-    margin-top: 5%;
+    
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -118,12 +126,13 @@ h2{
     text-align: center;
     font-size: 0.8em;
     padding-top: 3%;
+    padding-left: 0%;
 }
 
 
 /*//////////////////////////////////////////fond_vache/////////////////////////////////////////////////////////*/
 #fond_vache{
-    background-image: url(illustration_2.png) ;
+    background-image: url(vaches.jpg) ;
     background-size: cover;
     min-height: 30vh;
     display: flex;
