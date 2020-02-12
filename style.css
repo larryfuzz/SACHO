@@ -149,6 +149,7 @@ span{
     flex-direction: column;
     background-color: black;
     min-height: 50vh;
+    padding-bottom: 5%;
 }
 
 #illustration_2{
