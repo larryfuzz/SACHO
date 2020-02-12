@@ -7,11 +7,13 @@
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
 html{
+    width: 100%;
     height: 100%;
     margin: 0%;
     padding: 0%;
 }
 body{
+    width: 100%;
     height: 100%;
     margin: 0%;
     padding: 0%;
@@ -34,20 +36,15 @@ section {
 /////////////////////////////////////////// HEADER //////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header{
-    background-image: url(sacho_bg.jpg);
+    background-image: url(images/sacho_bg.jpg);
     background-size: cover;
+    background-position: 50% 50%;
     min-height: 100vh;
     margin: 0%;
     padding: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;   
-    text-align: center;
 }
 h1{
     color: #ffffff;
-    
 }
 p{
     color: #ffffff;  
@@ -64,25 +61,47 @@ ul{
 /*//////////////////////////////////////////VIDEO/////////////////////////////////////////////////////////*/
 
 #section_video{
-    background-image: url(image_de_fond_1.jpg) ;
+    background-color: rgba(0, 0, 0, 0.322);
+    background-image:  url(images/fond_drone.jpg);
     
     background-size: cover;
     min-height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+#opacite{
+    margin: 0%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;   
     text-align: center;
-    flex-direction: column;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+    
+    
+}
 
+#boite_responsive{
+    width: 75%;
+}
+.resp-container { 
+    position: relative; 
+    overflow: hidden; 
+    padding-top: 56.25%;
+  }
   #video{
-  width: 720px;
-  height: 405px;
-  border: 0;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  border: 0; 
+  
+
+  
 }
 /*//////////////////////////////////////////AFFICHE/////////////////////////////////////////////////////////*/
 
@@ -106,6 +125,15 @@ h2{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+#prog {
+    font-size: 14px;
+    line-height: 130%;
+
+}
+span{
+    text-decoration: underline;
+    font-style: italic;
 }
 
 /*//////////////////////////////////////////PROG/////////////////////////////////////////////////////////*/
@@ -132,8 +160,9 @@ h2{
 
 /*//////////////////////////////////////////fond_vache/////////////////////////////////////////////////////////*/
 #fond_vache{
-    background-image: url(vaches.jpg) ;
+    background-image: url(images/vaches.jpg) ;
     background-size: cover;
+    background-position: 50% 50%;
     min-height: 30vh;
     display: flex;
     align-items: center;
@@ -171,19 +200,24 @@ footer{
     padding: 0%;
     padding-top: 10%;
     padding-bottom: 13%;
+    
 }
 nav>ul{
     display: flex;
     justify-content: space-between;
     width: 70%;
+    
 }
 
 nav>ul>li{
     display: inline;
+    
 }
 a{
     text-decoration: none;
     color: white;
+    font-size: 12px;
+    
     
 }
 a:visited{
