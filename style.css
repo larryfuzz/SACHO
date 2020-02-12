@@ -17,6 +17,7 @@ body{
     height: 100%;
     margin: 0%;
     padding: 0%;
+    
 }
 section {
     box-sizing: border-box;
@@ -28,7 +29,9 @@ section {
 
 
 
-
+main {
+    background-color: rgba(0, 0, 0);
+}
 
 
 
@@ -42,6 +45,7 @@ header{
     min-height: 100vh;
     margin: 0%;
     padding: 0%;
+    
 }
 h1{
     color: #ffffff;
@@ -93,6 +97,7 @@ ul{
     padding-top: 56.25%;
   }
   #video{
+
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -143,7 +148,7 @@ span{
     justify-content: center;
     flex-direction: column;
     background-color: black;
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
 #illustration_2{
@@ -225,4 +230,24 @@ a:visited{
 }
 a:hover{
     text-decoration: underline;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// MEDIE QUERIES //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 1000px) {
+    nav>ul{
+        
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120px;
+        
+    }
+    footer{
+        padding-bottom: 25%;
+    }
+
 }
